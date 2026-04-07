@@ -18,6 +18,4 @@ fn main() {
     println!("{}", faculty_email);
     println!("{}", general_email);
     //lesson 3 end 
-
-
 }
