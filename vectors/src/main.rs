@@ -1,9 +1,22 @@
 use rand::RngExt;
+use serde::{Deserialize, Serialize};
+use serde_json;
+use std::fs::File;
+#[derive(Serialize, Deserialize)]
+struct User {
+    name: String,
+    surname: String,
+    username: String,
+    faculty_email: String,
+    general_email: String,
+}
+
 fn main() {
     use std::io;
     //lesson 3 start topic: strings
     //lesson 5 start topic: vectors, random function
     let mut data = Vec::new();
+    let mut user = Vec::new();
     let mut rnd = rand::rng();
     let mut loop_number = String::new();
     io::stdin().read_line(&mut loop_number).expect("Failed to read line");
@@ -53,8 +66,17 @@ fn main() {
     println!("{}", faculty_email);
     println!("{}", general_email);
     //lesson 3 end 
+    user.push(User {
+        name: name.to_string(),
+        surname: surname.to_string(),
+        username: username.to_string(),
+        faculty_email: faculty_email.to_string(),
+        general_email: general_email.to_string(),
+    });
 }
 println!("{:?}", data); //print all used usernames
+let file = File::create("users.json").expect("Failed to create file");
+serde_json::to_writer(file, &user).expect("Failed to write to file");
 //lesson 5 end topic: vectors, random function
 }
 
