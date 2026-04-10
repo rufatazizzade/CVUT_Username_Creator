@@ -9,7 +9,7 @@ struct User {
     username: String,
     faculty_email: String,
     general_email: String,
-}
+} // we struct for saving data in json file basicly we giving reference to code to how code should data look like
 
 fn main() {
     use std::io;
@@ -72,11 +72,11 @@ fn main() {
         username: username.to_string(),
         faculty_email: faculty_email.to_string(),
         general_email: general_email.to_string(),
-    });
+    });//we push user struct to user vector
 }
 println!("{:?}", data); //print all used usernames
-let file = File::create("users.json").expect("Failed to create file");
-serde_json::to_writer(file, &user).expect("Failed to write to file");
+let file = File::create("users.json").expect("Failed to create file"); //we create file
+serde_json::to_writer(file, &user).expect("Failed to write to file"); //we write user vector to file
 //lesson 5 end topic: vectors, random function
 }
 
