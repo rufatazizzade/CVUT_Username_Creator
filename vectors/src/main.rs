@@ -41,6 +41,7 @@ fn main() {
     if data.contains(&username){
         let rnd_number = rnd.random_range(1..100);
         username = username + &rnd_number.to_string();
+        //it's possible to use counter for this situation, but it's not random. I prefer random because why not?
     }
 
     println!("{}", username);
