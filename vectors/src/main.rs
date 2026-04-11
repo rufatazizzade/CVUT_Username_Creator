@@ -79,4 +79,3 @@ let file = File::create("users.json").expect("Failed to create file"); //we crea
 serde_json::to_writer(file, &user).expect("Failed to write to file"); //we write user vector to file
 //lesson 5 end topic: vectors, random function
 }
-
