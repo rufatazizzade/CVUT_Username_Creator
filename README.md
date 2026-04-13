@@ -4,12 +4,12 @@ This project is a simple Rust program that generates a university-style user acc
 
 Please note that:
 Vectors folder:
-Codes in vectors folder is more advanced version of this project. In this folder we are using vectors to store data. And It is possible to add more than one user.
+Codes in vectors folder is using random numbers for giving username to user. In this folder we are using vectors to store data. And It is possible to add more than one user. "example: user1: azizzruf user2: azizzruf34"
 
 Functions folder:
-Codes in functions folder is more easy to read logic of code. In these codes we using seperate functions for each action. It is more organized and easy to understand.
+Codes in functions folder is more easy to read logic of code. In these codes we using seperate functions for each action. It is more organized and easy to understand. And if there have 1+ same username we using counter system for assign username to user "example:  user1: azizzruf user2: azizzruf1" and in these code I solved some logical error which there have in vectors folder. 
 
-If you want to understand code use functions folder, if you want to see advanced version of this project use vectors folder.
+So, If you are interested to try these codes, I highly recommend to use codes in functions folder.
 
 The program:
 - reads a user's name and surname from standard input,
