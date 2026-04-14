@@ -1,5 +1,0 @@
-C:\Users\Admin\Desktop\rust\01\3th'\thirdlesson\vectors\target\debug\build\quote-0276443717932ec0\build_script_build-0276443717932ec0.d: C:\Users\Admin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\quote-1.0.45\build.rs
-
-C:\Users\Admin\Desktop\rust\01\3th'\thirdlesson\vectors\target\debug\build\quote-0276443717932ec0\build_script_build-0276443717932ec0.exe: C:\Users\Admin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\quote-1.0.45\build.rs
-
-C:\Users\Admin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\quote-1.0.45\build.rs:
