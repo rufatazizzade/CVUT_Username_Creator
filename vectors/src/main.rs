@@ -51,7 +51,7 @@ fn main() {
 
     let mut username = secondpart.to_lowercase() + &firstpart.to_lowercase();
     //control if there exist any same username; use random function to generate random number and add it to the username
-    if data.contains(&username){
+    while data.contains(&username){
         let rnd_number = rnd.random_range(1..100);
         username = username + &rnd_number.to_string();
         //it's possible to use counter for this situation, but it's not random. I prefer random because why not?
